@@ -1,5 +1,5 @@
 -- 코드를 입력하세요
-SELECT LEFT(PRODUCT_CODE, 2) AS CATEGORY, COUNT(PRODUCT_CODE) AS PRODUCTS
-FROM PRODUCT
-GROUP BY LEFT(PRODUCT_CODE, 2)
-ORDER BY PRODUCT_CODE;
+SELECT left(product_code, 2) as 'category', count(product_id) as 'products'
+from product
+group by category
+order by category;

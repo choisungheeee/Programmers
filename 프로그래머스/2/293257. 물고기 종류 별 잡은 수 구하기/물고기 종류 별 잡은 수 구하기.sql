@@ -1,5 +1,5 @@
 -- 코드를 작성해주세요
-SELECT COUNT(*) AS FISH_COUNT, FISH_NAME
-FROM FISH_INFO JOIN FISH_NAME_INFO ON FISH_INFO.FISH_TYPE = FISH_NAME_INFO.FISH_TYPE
-GROUP BY FISH_NAME
-ORDER BY FISH_COUNT DESC;
+select count(a.fish_type) as 'fish_count', b.fish_name
+from fish_info a join fish_name_info b on a.fish_type = b.fish_type 
+group by b.fish_name
+order by fish_count desc;

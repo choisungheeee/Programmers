@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 01월 21일 10:54:45
+2025년 05월 23일 10:49:35
 
 ### 문제 설명
 
@@ -65,10 +65,13 @@
 <td>INTEGER</td>
 <td>FALSE</td>
 </tr>
+<tr>
+<td>FISH_NAME</td>
+<td>VARCHAR</td>
+<td>FALSE</td>
+</tr>
 </tbody>
       </table>
-<p>| FISH_NAME | VARCHAR | FALSE |</p>
-
 <hr>
 
 <h5>문제</h5>

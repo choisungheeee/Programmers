@@ -1,10 +1,13 @@
 class Solution {
     public int[] solution(int[] num_list) {
-        int[] answer = new int[num_list.length];
+        int length = num_list.length;   // 배열의 길이
+        int reverse = length-1;         // 거꾸로 뒤집을 배열의 길이
         
-        for(int i=0; i<num_list.length; i++) {
-            answer[i] = num_list[num_list.length - i - 1];
-        }
+        int[] answer = new int[length];
+        
+        for(int i=0; i<length; i++) {
+            answer[reverse--] = num_list[i];
+        }        
         
         return answer;
     }

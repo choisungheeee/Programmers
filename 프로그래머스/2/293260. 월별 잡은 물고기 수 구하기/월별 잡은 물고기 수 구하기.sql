@@ -1,5 +1,5 @@
 -- 코드를 작성해주세요
-SELECT COUNT(*) AS FISH_COUNT, MONTH(TIME) AS MONTH
-FROM FISH_INFO
-GROUP BY MONTH HAVING FISH_COUNT > 0
-ORDER BY MONTH;
+select count(*) as fish_count, month(time) as month
+from fish_info
+group by month
+order by month;
